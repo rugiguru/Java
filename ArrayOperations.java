@@ -3,7 +3,8 @@ class ArrayOperations
 {
       public static void main(String args[])
       {
-            makeIntArray();
+            int[] myArray = {25,23,26,47};
+            duplicateArray(myArray);
       }
 
       // construct an array of integers  from user inputs 
@@ -25,4 +26,18 @@ class ArrayOperations
             System.out.println ("The numbers array " + intArray);
             obj.close();
       }
+
+      public static void duplicateArray(int[] inputArray){
+
+            int[] arrayCopy = new int[inputArray.length];
+
+            for (int i = 0; i < inputArray.length; i++) {
+                  arrayCopy[i] = inputArray[i];
+            }
+            
+            System.out.println(Arrays.toString(arrayCopy));  
+            
+      }
+
+      
 }

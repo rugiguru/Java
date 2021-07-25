@@ -5,6 +5,7 @@ class ArrayOperations
       {
             int[] myArray = {25,23,26,47};
             reverseArray(myArray);
+            
       }
 
       // construct an array of integers  from user inputs 
